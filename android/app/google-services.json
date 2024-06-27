@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "900061710194",
+    "project_id": "ringsizer-b09e2",
+    "storage_bucket": "ringsizer-b09e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900061710194:android:774e9739caf0dca964bfeb",
+        "android_client_info": {
+          "package_name": "com.example.ringsizer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDduScaW5Iv2Q4koxkGYp6P2DyJXhloJb4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
