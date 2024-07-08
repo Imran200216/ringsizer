@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ringsizer/constants/colors.dart';
@@ -45,10 +46,10 @@ class ProfileScreen extends StatelessWidget {
                           child: CircleAvatar(
                             radius: 100,
                             backgroundImage: user.photoURL != null
-                                ? NetworkImage(
+                                ? CachedNetworkImageProvider(
                                     user.photoURL!,
                                   )
-                                : const NetworkImage(
+                                : const CachedNetworkImageProvider(
                                     "https://imgs.search.brave.com/9TilXWEBF8MU39J5Jap7ZYUz902iylBbrogGwQ44D54/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by8zZC1hbmltYXRp/b24tY2hhcmFjdGVy/LWNhcnRvb25fMTEz/MjU1LTEwODQyLmpw/Zz9zaXplPTYyNiZl/eHQ9anBn",
                                   ),
                           ),
