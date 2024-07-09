@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(create: (context) => BottomNavProvider()),
 
           /// expansion tile provider
-          ChangeNotifierProvider(create: (context) => ExpansionTileProvider()),
+          ChangeNotifierProvider(create: (context) => FaqProvider()),
         ],
         builder: (context, child) {
           return const MaterialApp(

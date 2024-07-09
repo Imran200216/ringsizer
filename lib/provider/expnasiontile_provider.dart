@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ExpansionTileProvider with ChangeNotifier {
-  bool _isExpanded = false;
+class FaqProvider with ChangeNotifier {
+  int _expandedIndex = -1;
 
-  bool get isExpanded => _isExpanded;
+  int get expandedIndex => _expandedIndex;
 
-  void toggleExpanded() {
-    _isExpanded = !_isExpanded;
+  void setExpandedIndex(int index) {
+    if (_expandedIndex == index) {
+      _expandedIndex = -1;
+    } else {
+      _expandedIndex = index;
+    }
     notifyListeners();
   }
 }
